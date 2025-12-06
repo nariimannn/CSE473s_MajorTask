@@ -19,8 +19,8 @@ class Dense(BaseLayer):
         self.b = np.zeros((output_size, 1))
         self.dA = None
         self.db = None
-        self.f = None   # input stored for backward
-        self.Z = None   # pre-activation stored for clarity
+        self.f = None   
+        self.Z = None  
 
     def forward(self, input_data):
         # input_data shape: (input_size, batch_size)

@@ -3,5 +3,4 @@ class SGD:
         self.learning_rate = learning_rate
 
     def step(self, parameter, gradient):
-        # returns updated parameter (do not update in-place here)
         return parameter - self.learning_rate * gradient

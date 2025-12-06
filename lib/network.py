@@ -2,7 +2,7 @@ import numpy as np
 from lib.layers import Dense
 from lib.activations import ReLU, Sigmoid, Tanh, Softmax
 from lib.losses import MeanSquaredError
-from lib.optimizer import SGD
+from lib.optimizer import GD
 
 class Sequential:
     def __init__(self):
