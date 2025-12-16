@@ -1,5 +1,4 @@
 import numpy as np
-
 class BaseLayer:
     def forward(self, input_data):
         raise NotImplementedError
@@ -19,8 +18,8 @@ class Dense(BaseLayer):
         self.b = np.zeros((output_size, 1))
         self.dA = None
         self.db = None
-        self.f = None   
-        self.Z = None  
+        self.f = None
+        self.Z = None
 
     def forward(self, input_data):
         # input_data shape: (input_size, batch_size)

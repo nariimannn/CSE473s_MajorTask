@@ -13,3 +13,4 @@ class MeanSquaredError:
         assert Y_pred.shape == Y_true.shape, "Gradient: prediction and target shapes must match"
         m = Y_pred.shape[1]
         return (Y_pred - Y_true) / m
+

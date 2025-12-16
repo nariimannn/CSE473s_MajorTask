@@ -55,3 +55,4 @@ class Softmax(BaseLayer):
     def backward(self, dA):
         # Keep simple pass-through; full jacobian not needed for MSE checks
         return dA
+
